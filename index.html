@@ -1,0 +1,1907 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Winning in Your Marriage — 6-Week Cohort Playbook</title>
+<style>
+  /* ---- Base ---- */
+  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&family=Playfair+Display:wght@700&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Lato', Arial, sans-serif;
+    font-size: 11pt;
+    color: #1a1a1a;
+    line-height: 1.65;
+    background: white;
+  }
+
+  /* ---- Print Layout ---- */
+  @page {
+    size: letter;
+    margin: 0.85in 0.9in 0.85in 0.9in;
+  }
+
+  @media print {
+    .page-break { page-break-after: always; }
+    .no-break { page-break-inside: avoid; }
+    a { text-decoration: none; color: inherit; }
+  }
+
+  /* ---- Answers in Red ---- */
+  .answer {
+    color: #c0392b;
+    font-weight: 700;
+  }
+
+  /* ---- Cover Page ---- */
+  .cover {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #1a1a2e;
+    color: white;
+    padding: 2in 1in;
+    min-height: 9in;
+  }
+
+  .cover .series-tag {
+    font-size: 10pt;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #d4af37;
+    margin-bottom: 0.4in;
+  }
+
+  .cover h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 42pt;
+    line-height: 1.1;
+    color: white;
+    margin-bottom: 0.15in;
+  }
+
+  .cover .subtitle {
+    font-size: 14pt;
+    font-weight: 300;
+    color: #c0c0d8;
+    margin-bottom: 0.5in;
+    letter-spacing: 0.05em;
+  }
+
+  .cover .divider {
+    width: 60px;
+    height: 3px;
+    background: #d4af37;
+    margin: 0.3in auto;
+  }
+
+  .cover .description {
+    font-size: 11pt;
+    color: #c0c0d8;
+    max-width: 4.5in;
+    line-height: 1.7;
+  }
+
+  /* ---- TOC ---- */
+  .toc-page {
+    padding-top: 0.5in;
+  }
+
+  .toc-page h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 22pt;
+    color: #1a1a2e;
+    margin-bottom: 0.3in;
+    border-bottom: 2px solid #d4af37;
+    padding-bottom: 0.1in;
+  }
+
+  .toc-entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 6px 0;
+    border-bottom: 1px dotted #ccc;
+  }
+
+  .toc-entry .week-label {
+    font-weight: 700;
+    color: #1a1a2e;
+    font-size: 10pt;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    min-width: 1in;
+  }
+
+  .toc-entry .week-title {
+    flex: 1;
+    padding: 0 12px;
+    color: #333;
+  }
+
+  /* ---- How To Use Page ---- */
+  .intro-page {
+    padding-top: 0.3in;
+  }
+
+  .intro-page h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 22pt;
+    color: #1a1a2e;
+    margin-bottom: 0.2in;
+    border-bottom: 2px solid #d4af37;
+    padding-bottom: 0.1in;
+  }
+
+  .intro-box {
+    background: #f7f4ed;
+    border-left: 4px solid #d4af37;
+    padding: 16px 20px;
+    margin: 0.2in 0;
+    border-radius: 0 4px 4px 0;
+  }
+
+  .intro-box p {
+    margin-bottom: 8px;
+  }
+
+  .intro-box p:last-child { margin-bottom: 0; }
+
+  /* ---- Week Header ---- */
+  .week-header {
+    background: #1a1a2e;
+    color: white;
+    padding: 0.35in 0.4in;
+    margin: 0 -0.9in;
+    padding-left: 0.9in;
+    padding-right: 0.9in;
+  }
+
+  .week-header .week-number {
+    font-size: 10pt;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #d4af37;
+    margin-bottom: 6px;
+  }
+
+  .week-header h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 26pt;
+    color: white;
+    line-height: 1.1;
+  }
+
+  .week-header .week-theme {
+    font-size: 11pt;
+    color: #c0c0d8;
+    margin-top: 6px;
+    font-style: italic;
+  }
+
+  /* ---- Section Labels ---- */
+  .section-label {
+    display: inline-block;
+    background: #d4af37;
+    color: #1a1a2e;
+    font-size: 8.5pt;
+    font-weight: 900;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    margin: 0.2in 0 0.1in;
+    border-radius: 2px;
+  }
+
+  /* ---- Scripture Block ---- */
+  .scripture-block {
+    background: #f0f4f8;
+    border-left: 4px solid #1a1a2e;
+    padding: 14px 18px;
+    margin: 0.15in 0;
+    font-style: italic;
+    font-size: 10.5pt;
+    color: #333;
+    border-radius: 0 4px 4px 0;
+  }
+
+  .scripture-block cite {
+    display: block;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 9.5pt;
+    color: #1a1a2e;
+    margin-top: 8px;
+  }
+
+  /* ---- Teaching Notes ---- */
+  h3 {
+    font-size: 14pt;
+    font-weight: 900;
+    color: #1a1a2e;
+    margin: 0.2in 0 0.08in;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  h4 {
+    font-size: 12pt;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin: 0.15in 0 0.05in;
+  }
+
+  p {
+    margin-bottom: 0.1in;
+  }
+
+  ul, ol {
+    padding-left: 1.2em;
+    margin-bottom: 0.1in;
+  }
+
+  li {
+    margin-bottom: 5px;
+  }
+
+  /* ---- Acronym Boxes ---- */
+  .acronym-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.15in;
+    margin: 0.15in 0;
+  }
+
+  .acronym-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  .acronym-card .letter {
+    background: #1a1a2e;
+    color: #d4af37;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 28pt;
+    text-align: center;
+    padding: 10px;
+    line-height: 1;
+  }
+
+  .acronym-card .meaning {
+    padding: 10px 12px;
+  }
+
+  .acronym-card .meaning .word {
+    font-weight: 900;
+    font-size: 11pt;
+    color: #c0392b;
+  }
+
+  .acronym-card .meaning .desc {
+    font-size: 9.5pt;
+    color: #555;
+    margin-top: 3px;
+  }
+
+  /* ---- Tip Rows ---- */
+  .tip-row {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 8px;
+    gap: 10px;
+  }
+
+  .tip-number {
+    background: #1a1a2e;
+    color: #d4af37;
+    font-weight: 900;
+    font-size: 9pt;
+    min-width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .tip-content .tip-title {
+    font-weight: 700;
+    color: #c0392b;
+  }
+
+  .tip-content .tip-desc {
+    font-size: 9.5pt;
+    color: #555;
+    margin-top: 2px;
+  }
+
+  /* ---- Rule Rows ---- */
+  .rule-row {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    gap: 12px;
+    padding: 8px 12px;
+    background: #fafafa;
+    border: 1px solid #eee;
+    border-radius: 4px;
+  }
+
+  .rule-num {
+    font-weight: 900;
+    font-size: 11pt;
+    color: #1a1a2e;
+    min-width: 30px;
+    flex-shrink: 0;
+  }
+
+  .rule-content .rule-title {
+    font-weight: 700;
+    color: #c0392b;
+  }
+
+  .rule-content .rule-desc {
+    font-size: 9.5pt;
+    color: #555;
+    margin-top: 3px;
+  }
+
+  /* ---- Discussion Box ---- */
+  .discussion-box {
+    background: #fff8e7;
+    border: 2px solid #d4af37;
+    border-radius: 6px;
+    padding: 16px 18px;
+    margin: 0.2in 0;
+  }
+
+  .discussion-box .box-title {
+    font-weight: 900;
+    font-size: 10pt;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #1a1a2e;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .discussion-box .box-title::before {
+    content: "💬";
+    font-size: 14pt;
+  }
+
+  .discussion-box ol {
+    padding-left: 1.3em;
+  }
+
+  .discussion-box li {
+    margin-bottom: 8px;
+    font-size: 10.5pt;
+  }
+
+  /* ---- Challenge Box ---- */
+  .challenge-box {
+    background: #1a1a2e;
+    color: white;
+    border-radius: 6px;
+    padding: 16px 18px;
+    margin: 0.2in 0;
+  }
+
+  .challenge-box .box-title {
+    font-weight: 900;
+    font-size: 10pt;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #d4af37;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .challenge-box .box-title::before {
+    content: "✦";
+    font-size: 12pt;
+  }
+
+  .challenge-box p, .challenge-box li {
+    color: #e0e0f0;
+    font-size: 10.5pt;
+  }
+
+  .challenge-box ul {
+    padding-left: 1.2em;
+  }
+
+  /* ---- Sex Discussion Questions ---- */
+  .question-block {
+    margin: 0.15in 0;
+  }
+
+  .question-item {
+    margin-bottom: 16px;
+  }
+
+  .question-item .q-text {
+    font-size: 10.5pt;
+    color: #333;
+    margin-bottom: 6px;
+  }
+
+  .answer-line {
+    border-bottom: 1px solid #aaa;
+    height: 22px;
+    margin-bottom: 4px;
+  }
+
+  /* ---- Table ---- */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0.15in 0;
+    font-size: 10pt;
+  }
+
+  th {
+    background: #1a1a2e;
+    color: white;
+    padding: 8px 12px;
+    text-align: left;
+    font-size: 9.5pt;
+    letter-spacing: 0.05em;
+  }
+
+  td {
+    padding: 7px 12px;
+    border-bottom: 1px solid #e0e0e0;
+    vertical-align: top;
+  }
+
+  tr:nth-child(even) td { background: #f7f7f7; }
+
+  /* ---- Financial Assessment ---- */
+  .assess-item {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 0.12in;
+    overflow: hidden;
+  }
+
+  .assess-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 14px;
+    background: #f7f7f7;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .assess-number {
+    font-weight: 900;
+    color: #1a1a2e;
+    min-width: 24px;
+    font-size: 12pt;
+  }
+
+  .assess-question {
+    flex: 1;
+    font-size: 10pt;
+    color: #1a1a2e;
+  }
+
+  .assess-yesno {
+    display: flex;
+    gap: 10px;
+    font-size: 9pt;
+    font-weight: 700;
+  }
+
+  .check-box {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #888;
+    border-radius: 2px;
+    display: inline-block;
+    margin-right: 4px;
+    vertical-align: middle;
+  }
+
+  .assess-steps {
+    padding: 8px 14px 8px 50px;
+    font-size: 9.5pt;
+    color: #555;
+  }
+
+  .assess-steps li {
+    margin-bottom: 3px;
+  }
+
+  /* ---- PEACE PLAN ---- */
+  .peace-plan {
+    border: 2px solid #1a1a2e;
+    border-radius: 6px;
+    padding: 0.2in;
+    margin: 0.15in 0;
+  }
+
+  .peace-plan h3 {
+    border: none;
+    margin-top: 0;
+    font-size: 13pt;
+  }
+
+  .peace-plan .covenant-line {
+    font-size: 9.5pt;
+    color: #555;
+    margin-bottom: 10px;
+  }
+
+  .peace-plan .plan-item {
+    margin-bottom: 8px;
+    font-size: 10pt;
+    padding-left: 0.15in;
+    border-left: 3px solid #d4af37;
+    padding-left: 8px;
+  }
+
+  .signature-block {
+    display: flex;
+    gap: 0.3in;
+    margin-top: 0.2in;
+  }
+
+  .sig-line {
+    flex: 1;
+    border-bottom: 1px solid #666;
+    padding-top: 0.25in;
+    font-size: 9pt;
+    color: #777;
+    text-align: center;
+  }
+
+  /* ---- Love Languages Quiz ---- */
+  .quiz-intro {
+    font-size: 10pt;
+    color: #555;
+    margin-bottom: 0.15in;
+  }
+
+  .quiz-item {
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    background: #fafafa;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    font-size: 10pt;
+  }
+
+  .quiz-item .q-num {
+    font-weight: 700;
+    color: #1a1a2e;
+  }
+
+  .quiz-item .choice {
+    display: block;
+    padding: 2px 0;
+    color: #444;
+  }
+
+  .quiz-item .choice span {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 1.5px solid #888;
+    border-radius: 50%;
+    margin-right: 6px;
+    vertical-align: middle;
+  }
+
+  .quiz-key {
+    background: #f0f4f8;
+    border-left: 4px solid #1a1a2e;
+    padding: 12px 16px;
+    margin: 0.15in 0;
+    border-radius: 0 4px 4px 0;
+  }
+
+  .quiz-key .key-row {
+    margin-bottom: 5px;
+    font-size: 10pt;
+  }
+
+  .quiz-key .key-row strong { color: #c0392b; }
+
+  /* ---- Footer ---- */
+  .page-footer {
+    text-align: center;
+    font-size: 8pt;
+    color: #aaa;
+    margin-top: 0.3in;
+    padding-top: 8px;
+    border-top: 1px solid #eee;
+  }
+
+  /* ---- Two Column ---- */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.2in;
+    margin: 0.1in 0;
+  }
+
+  /* ---- Toxic Box ---- */
+  .toxic-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 0.12in 0;
+  }
+
+  .toxic-card {
+    border-left: 4px solid #c0392b;
+    background: #fdf5f5;
+    padding: 10px 14px;
+    border-radius: 0 4px 4px 0;
+  }
+
+  .toxic-card .t-name {
+    font-weight: 900;
+    color: #c0392b;
+    font-size: 11pt;
+  }
+
+  .toxic-card .t-number {
+    font-size: 8pt;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 3px;
+  }
+
+  .toxic-card .t-desc {
+    font-size: 9.5pt;
+    color: #555;
+    margin-top: 4px;
+  }
+
+  hr.gold {
+    border: none;
+    border-top: 2px solid #d4af37;
+    margin: 0.2in 0;
+  }
+
+  .note {
+    font-size: 9pt;
+    color: #777;
+    font-style: italic;
+    margin: 0.05in 0;
+  }
+
+  .week-overview {
+    font-size: 10.5pt;
+    color: #444;
+    margin: 0.15in 0;
+    line-height: 1.7;
+  }
+
+  /* ---- SYMBIS Box ---- */
+  .symbis-box {
+    background: #eef6f4;
+    border: 2px solid #1a7a6e;
+    border-radius: 6px;
+    padding: 14px 18px;
+    margin: 0.2in 0;
+  }
+
+  .symbis-box .symbis-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .symbis-box .symbis-badge {
+    background: #1a7a6e;
+    color: white;
+    font-weight: 900;
+    font-size: 8pt;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 3px 9px;
+    border-radius: 2px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .symbis-box .symbis-title {
+    font-weight: 900;
+    font-size: 11pt;
+    color: #1a7a6e;
+    line-height: 1.2;
+  }
+
+  .symbis-box .symbis-timing {
+    font-size: 9pt;
+    color: #2a9d8f;
+    font-style: italic;
+    margin-bottom: 8px;
+  }
+
+  .symbis-box .symbis-intro {
+    font-size: 10pt;
+    color: #333;
+    margin-bottom: 8px;
+  }
+
+  .symbis-box .symbis-questions {
+    margin: 0;
+    padding-left: 1.2em;
+  }
+
+  .symbis-box .symbis-questions li {
+    font-size: 10pt;
+    color: #333;
+    margin-bottom: 6px;
+  }
+
+  .symbis-base-box {
+    background: #f4f6fb;
+    border: 1px solid #8899cc;
+    border-radius: 6px;
+    padding: 14px 18px;
+    margin: 0.2in 0;
+  }
+
+  .symbis-base-box .base-title {
+    font-weight: 900;
+    font-size: 10pt;
+    color: #334488;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  .symbis-base-box table {
+    margin: 0;
+    font-size: 9.5pt;
+  }
+
+  .symbis-base-box th {
+    background: #334488;
+    font-size: 9pt;
+  }
+</style>
+</head>
+<body>
+
+<!-- ============================================================
+     COVER
+     ============================================================ -->
+<div class="cover page-break">
+  <div class="series-tag">A Six-Week Cohort Experience</div>
+  <h1>Winning in<br>Your Marriage</h1>
+  <div class="subtitle">Couple's Playbook</div>
+  <div class="divider"></div>
+  <p class="description">A practical, Christ-centered guide to strengthening your marriage through six weeks of teaching, honest conversation, and intentional action.</p>
+</div>
+
+
+<!-- ============================================================
+     HOW TO USE
+     ============================================================ -->
+<div class="intro-page page-break">
+  <h2>How to Use This Playbook</h2>
+  <p class="week-overview">Welcome to <em>Winning in Your Marriage</em> — a six-week cohort experience designed to give you and your spouse practical, biblical tools to strengthen your relationship. Whether your marriage feels rock solid or like it needs serious attention, this material will meet you where you are.</p>
+
+  <div class="intro-box no-break">
+    <p><strong>Each week includes four parts:</strong></p>
+    <ul>
+      <li><strong>Scripture</strong> — a key passage that anchors the week's theme.</li>
+      <li><strong>Teaching Notes</strong> — complete session notes with key concepts highlighted. Use these during your group session or as a personal review guide.</li>
+      <li><strong>Couple Discussion</strong> — questions to answer privately with your spouse after the session. These are for you and your spouse only — you will not be asked to share with the group.</li>
+      <li><strong>Weekly Challenge</strong> — one specific thing to do together before the next session.</li>
+    </ul>
+  </div>
+
+  <div class="intro-box no-break">
+    <p><strong>A few ground rules for the cohort:</strong></p>
+    <ul>
+      <li>Don't use anything you learn as a weapon against your spouse.</li>
+      <li>Don't think primarily about what your spouse needs to learn — focus on yourself.</li>
+      <li>Don't judge or compare your marriage to others in the group.</li>
+      <li>Do take notes. Do the assignments. Do ask questions. And have fun.</li>
+    </ul>
+  </div>
+
+  <h3>Your Six-Week Journey</h3>
+  <table>
+    <thead>
+      <tr><th>Week</th><th>Topic</th><th>Key Focus</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>Week 1</strong></td><td>Love Her / Respect Him</td><td>Understanding each other's core needs</td></tr>
+      <tr><td><strong>Week 2</strong></td><td>Healthy Intimacy</td><td>Sex, connection, and honest conversation</td></tr>
+      <tr><td><strong>Week 3</strong></td><td>Communicating Effectively</td><td>Assertiveness and active listening</td></tr>
+      <tr><td><strong>Week 4</strong></td><td>Fighting Fair</td><td>Conflict resolution and your Peace Plan</td></tr>
+      <tr><td><strong>Week 5</strong></td><td>Money &amp; Marriage</td><td>Financial unity and a shared spending plan</td></tr>
+      <tr><td><strong>Week 6</strong></td><td>Harmony &amp; Expectations</td><td>Real love, love languages, and next steps</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Your SYMBIS Assessment</h3>
+  <p class="week-overview">Before the cohort begins, you and your spouse will each complete the <strong>SYMBIS Assessment</strong> (Saving Your Marriage Before It Starts). Your personalized report will be given to you at the Week 1 session.</p>
+
+  <div class="symbis-base-box no-break">
+    <div class="base-title">How Your SYMBIS Report Is Distributed</div>
+    <p style="font-size:10pt;color:#333;margin-bottom:10px;">Your report covers many areas of marriage. Rather than handing it all to you at once, we hold back six sections and release each one at the week where it matters most. That way, you receive each section in context — right when it's most relevant to your conversation as a couple.</p>
+    <table>
+      <thead><tr><th>Week</th><th>SYMBIS Section Distributed</th><th>Timing</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Week 1</strong></td><td>What Is Love &amp; Gender Differences</td><td>End of session</td></tr>
+        <tr><td><strong>Week 2</strong></td><td>Sexuality &amp; Communication</td><td>Start of session</td></tr>
+        <tr><td><strong>Week 3</strong></td><td><em>No new pages — bring your Week 2 packet</em></td><td>—</td></tr>
+        <tr><td><strong>Week 4</strong></td><td>Conflict</td><td>Start of session</td></tr>
+        <tr><td><strong>Week 5</strong></td><td>Finances &amp; Roles</td><td>End of session</td></tr>
+        <tr><td><strong>Week 6</strong></td><td>Spirituality</td><td>Start of session</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:9pt;color:#666;margin-top:8px;font-style:italic;">Your base packet (given at Week 1) includes: Report Overview, Relationship Momentum, Mindset Toward Marriage, Individual &amp; Relationship Wellbeing, Your World Together, Personality Profiles, Personality Dynamics, Adaptability, Remarriage Readiness (if applicable), Children, and Closing/Next Steps.</p>
+  </div>
+
+  <p class="note">Appendices at the back include: The Five Love Languages Quiz, your PEACE Plan template, and the Financial Health Self-Assessment.</p>
+</div>
+
+
+<!-- ============================================================
+     WEEK 1
+     ============================================================ -->
+<div class="page-break">
+  <div class="week-header">
+    <div class="week-number">Week One</div>
+    <h2>Love Her / Respect Him</h2>
+    <div class="week-theme">Understanding what your spouse needs most</div>
+  </div>
+
+  <div class="section-label">Scripture</div>
+  <div class="scripture-block no-break">
+    "Submit to one another out of reverence for Christ... Husbands, love your wives, just as Christ loved the church and gave himself up for her... each one of you also must love his wife as he loves himself, and the wife must respect her husband."
+    <cite>— Ephesians 5:21, 25, 33 (NIV)</cite>
+  </div>
+
+  <div class="section-label">Session Overview</div>
+  <p class="week-overview">Most marriage conflict can be traced back to one broken cycle: a wife who feels unloved, who then becomes disrespectful — and a husband who feels disrespected, who then becomes unloving. Dr. Emerson Eggerichs calls this the <strong>Crazy Cycle</strong>. Her primary need is unconditional love. His primary need is unconditional respect. This week we explore what that looks like in practice.</p>
+
+  <div class="symbis-box no-break">
+    <div class="symbis-header">
+      <div class="symbis-badge">SYMBIS Report</div>
+      <div class="symbis-title">What Is Love &amp; Gender Differences — Distributed end of session</div>
+    </div>
+    <div class="symbis-timing">Two sections from your personal report will be handed out at the close of this session.</div>
+    <p class="symbis-intro">After the teaching, take time with your spouse to explore these questions from your report:</p>
+    <ul class="symbis-questions">
+      <li>Look at your top values list (Respect, Trust, Loyalty, etc.). Did any of your partner's top values surprise you?</li>
+      <li>Complete this sentence together: <em>"I feel most loved when you..."</em> — then compare your answers.</li>
+      <li>Review the His Needs / Her Needs lists. Circle the top 3 needs on your list that your partner may not fully understand yet.</li>
+      <li>Where do you see the strongest overlap between what you need and what your partner instinctively gives?</li>
+    </ul>
+  </div>
+
+  <h3>Four Needs of Every Wife — <span class="answer">RIBS</span></h3>
+  <p>Every wife has four core needs that, when consistently met by her husband, create a foundation of love and security in the marriage.</p>
+
+  <div class="acronym-grid no-break">
+    <div class="acronym-card">
+      <div class="letter">R</div>
+      <div class="meaning">
+        <div class="word answer">Relationship</div>
+        <div class="desc">Women are relational by nature. Her deepest need is to be in an unconditional loving relationship — to be loved in spite of her flaws, not because of her performance.</div>
+      </div>
+    </div>
+    <div class="acronym-card">
+      <div class="letter">I</div>
+      <div class="meaning">
+        <div class="word answer">Influence Authority</div>
+        <div class="desc">She needs to know she is her husband's number-one priority. Her words, thoughts, and feelings must carry weight with him. Cherish her and she will honor you. (Proverbs 4:8)</div>
+      </div>
+    </div>
+    <div class="acronym-card">
+      <div class="letter">B</div>
+      <div class="meaning">
+        <div class="word answer">Beauty</div>
+        <div class="desc">Every wife needs to hear "You are beautiful." Not just on special occasions — regularly, sincerely, and specifically. If you don't tell her, someone else will.</div>
+      </div>
+    </div>
+    <div class="acronym-card">
+      <div class="letter">S</div>
+      <div class="meaning">
+        <div class="word answer">Security</div>
+        <div class="desc">She needs a peaceful home free of worry — physical, financial, relational, and spiritual security. Her husband should be the one standing between her and whatever threatens the family.</div>
+      </div>
+    </div>
+  </div>
+
+  <p class="note">Adapted from <em>Love &amp; Respect</em> by Dr. Emerson Eggerichs.</p>
+
+  <h3>Three Needs of Every Husband — <span class="answer">RAS</span></h3>
+  <p>Every husband has three core needs that, when consistently met by his wife, unlock his best self as a leader, lover, and protector.</p>
+
+  <div class="acronym-grid no-break">
+    <div class="acronym-card">
+      <div class="letter">R</div>
+      <div class="meaning">
+        <div class="word answer">Respect</div>
+        <div class="desc">God commands it in Ephesians 5:33. Respect is not contingent on how the husband behaves — it is given because of the position God has entrusted to him. Love is like food; respect is water. A man would rather live in a home without warmth than without respect.</div>
+      </div>
+    </div>
+    <div class="acronym-card">
+      <div class="letter">A</div>
+      <div class="meaning">
+        <div class="word answer">Admiration</div>
+        <div class="desc">Where respect is about his position, admiration is about what he does. A wife's sincere admiration — for small things as much as big ones — drives a husband to become a better man, husband, and father.</div>
+      </div>
+    </div>
+  </div>
+  <div class="acronym-card no-break" style="margin-top:12px;">
+    <div class="letter">S</div>
+    <div class="meaning">
+      <div class="word answer">Sex</div>
+      <div class="desc" style="padding:10px 0;">For most husbands, physical intimacy is not primarily emotional — it's a core need. A healthy, consistent sex life is essential to a thriving marriage. Withholding sex is destructive. "Husbands and wives belong to each other." (1 Corinthians 7:4) We'll go deeper on this in Week 2.</div>
+    </div>
+  </div>
+
+  <hr class="gold">
+
+  <div class="discussion-box no-break">
+    <div class="box-title">Couple Discussion — Week 1</div>
+    <p style="font-size:9.5pt;color:#777;margin-bottom:10px;"><em>Find a private space with your spouse. Take turns answering honestly. These responses stay between the two of you.</em></p>
+    <ol>
+      <li>Looking at RIBS, which of the four needs do you feel your spouse provides well? Which one would you most like to see grow?</li>
+      <li>Looking at RAS, which of the three needs do you feel your spouse provides well? Which one would you most like to see grow?</li>
+      <li>In what area do <em>you personally</em> want to improve in providing for your spouse's needs? Be specific.</li>
+    </ol>
+  </div>
+
+  <div class="challenge-box no-break">
+    <div class="box-title">Weekly Challenge</div>
+    <p>This week, choose <strong>one specific need</strong> from RIBS or RAS and do something intentional to meet that need for your spouse — every single day. Don't tell them what you're doing. At the end of the week, share what you noticed.</p>
+  </div>
+</div>
+
+
+<!-- ============================================================
+     WEEK 2
+     ============================================================ -->
+<div class="page-break">
+  <div class="week-header">
+    <div class="week-number">Week Two</div>
+    <h2>Healthy Intimacy</h2>
+    <div class="week-theme">Building a vibrant, connected sex life</div>
+  </div>
+
+  <div class="section-label">Scripture</div>
+  <div class="scripture-block no-break">
+    "The husband should fulfill his marital duty to his wife, and likewise the wife to her husband. The wife does not have authority over her own body but yields it to her husband. In the same way, the husband does not have authority over his own body but yields it to his wife."
+    <cite>— 1 Corinthians 7:3–4 (NIV)</cite>
+  </div>
+
+  <div class="section-label">Session Overview</div>
+  <p class="week-overview">The enemy works on both ends of the same strategy: tempt you into sex before marriage, then after marriage do everything possible to keep you <em>away</em> from sex. A healthy sex life doesn't happen by accident — it requires intentionality, honesty, and mutual care. Below are nine practical tips for keeping your sex life strong.</p>
+
+  <div class="symbis-box no-break">
+    <div class="symbis-header">
+      <div class="symbis-badge">SYMBIS Report</div>
+      <div class="symbis-title">Sexuality &amp; Communication — Distributed start of session</div>
+    </div>
+    <div class="symbis-timing">Two sections from your personal report will be handed out at the beginning of this session.</div>
+    <p class="symbis-intro">Review these pages together before or during the couple exercise this week:</p>
+    <ul class="symbis-questions">
+      <li>Look at your desire ratings side by side. What does the gap — or alignment — tell you about expectations you've brought into this relationship?</li>
+      <li>Who tends to initiate, and how does that feel to each of you? Is there anything you'd want to adjust?</li>
+      <li>Review the frequency expectations you each recorded. Were you surprised by your partner's answer?</li>
+      <li>From the Communication section: each of you identify the one skill from <em>"communication skills I'd like to improve"</em> that you're committing to work on. Share it with your spouse.</li>
+    </ul>
+  </div>
+
+  <h3>Nine Tips for a Healthy Sex Life</h3>
+
+  <div class="no-break">
+  <div class="tip-row">
+    <div class="tip-number">1</div>
+    <div class="tip-content">
+      <div class="tip-title"><span class="answer">Protect</span> your sex life.</div>
+      <div class="tip-desc">Build guardrails and boundaries. Be intentional about what you watch, hear, and read. Don't allow emotional connections with people of the opposite sex to form and deepen.</div>
+    </div>
+  </div>
+
+  <div class="tip-row">
+    <div class="tip-number">2</div>
+    <div class="tip-content">
+      <div class="tip-title">Stay <span class="answer">physically fit</span>.</div>
+      <div class="tip-desc">How you care for your body is a form of care for your spouse. Physical health directly affects energy, confidence, and connection in the bedroom.</div>
+    </div>
+  </div>
+
+  <div class="tip-row">
+    <div class="tip-number">3</div>
+    <div class="tip-content">
+      <div class="tip-title">Never use sex as a <span class="answer">weapon</span>.</div>
+      <div class="tip-desc">Withholding sex as punishment or leverage is destructive to trust and intimacy. Physical intimacy is a gift you give each other — not a bargaining chip.</div>
+    </div>
+  </div>
+
+  <div class="tip-row">
+    <div class="tip-number">4</div>
+    <div class="tip-content">
+      <div class="tip-title"><span class="answer">Talk</span> about it.</div>
+      <div class="tip-desc">Have honest conversations about your desires, needs, and boundaries — outside the moment, not in the heat of it. Choose words carefully. This is a highly intimate topic that deserves private, respectful discussion between the two of you.</div>
+    </div>
+  </div>
+
+  <div class="tip-row">
+    <div class="tip-number">5</div>
+    <div class="tip-content">
+      <div class="tip-title">Keep your sex life a <span class="answer">priority</span>.</div>
+      <div class="tip-desc">Life gets busy. Kids, work, and exhaustion are real — but so is the need for consistent physical connection. Frequency that works for you both is what matters. Build it into your life intentionally, not as an afterthought.</div>
+    </div>
+  </div>
+
+  <div class="tip-row">
+    <div class="tip-number">6</div>
+    <div class="tip-content">
+      <div class="tip-title">Fulfill <span class="answer">one another's needs</span>.</div>
+      <div class="tip-desc">Shift your focus from your own cravings to meeting your spouse's needs. A marriage where both partners prioritize the other will never run dry.</div>
+    </div>
+  </div>
+
+  <div class="tip-row">
+    <div class="tip-number">7</div>
+    <div class="tip-content">
+      <div class="tip-title">Realize men and women <span class="answer">differ</span>.</div>
+      <div class="tip-desc">Men tend to be visually stimulated and progress quickly. Women tend to be more relationally stimulated and need more time. Understanding these differences creates patience and grace for each other.</div>
+    </div>
+  </div>
+
+  <div class="tip-row">
+    <div class="tip-number">8</div>
+    <div class="tip-content">
+      <div class="tip-title">Take time for <span class="answer">discovery</span>.</div>
+      <div class="tip-desc">You and your spouse's needs and preferences will change over time. Make it a regular, ongoing practice to learn what the other enjoys and desires.</div>
+    </div>
+  </div>
+
+  <div class="tip-row">
+    <div class="tip-number">9</div>
+    <div class="tip-content">
+      <div class="tip-title">View <span class="answer">the whole day</span> as foreplay.</div>
+      <div class="tip-desc">Take the entire day to prepare the mental, emotional, and spiritual needs of each other. Talking, touching, and flirting over the course of the day heightens anticipation and makes the sacred time together something you both look forward to.</div>
+    </div>
+  </div>
+  </div>
+
+  <hr class="gold">
+
+  <h3>Couple Exercise: Talking About Sex</h3>
+  <p>Complete the questions below <strong>separately and privately</strong> first. Then come together and take turns sharing your responses, using the guidelines below.</p>
+
+  <div class="intro-box no-break">
+    <p><strong>Speaker's job:</strong> Speak for yourself ("I" statements — "I wish...", "I feel..."). Describe how you would feel if this came true.</p>
+    <p><strong>Listener's job:</strong> Repeat or summarize what you heard. Describe the wish AND how your spouse would feel if the wish came true.</p>
+  </div>
+
+  <div class="question-block">
+    <div class="question-item">
+      <div class="q-text">1. I feel sexually aroused by you when</div>
+      <div class="answer-line"></div><div class="answer-line"></div>
+    </div>
+    <div class="question-item">
+      <div class="q-text">2. When we are making love, I really enjoy</div>
+      <div class="answer-line"></div><div class="answer-line"></div>
+    </div>
+    <div class="question-item">
+      <div class="q-text">3. When we are making love, I feel uncomfortable when you</div>
+      <div class="answer-line"></div><div class="answer-line"></div>
+    </div>
+    <div class="question-item">
+      <div class="q-text">4. The surest turn-off for me is</div>
+      <div class="answer-line"></div><div class="answer-line"></div>
+    </div>
+    <div class="question-item">
+      <div class="q-text">5. The surest turn-on for me is</div>
+      <div class="answer-line"></div><div class="answer-line"></div>
+    </div>
+    <div class="question-item">
+      <div class="q-text">6. For me, a healthy frequency for sex is _______ times a _______.</div>
+    </div>
+    <div class="question-item">
+      <div class="q-text">7. What you need to know about me when it comes to sex is</div>
+      <div class="answer-line"></div><div class="answer-line"></div>
+    </div>
+  </div>
+
+  <div class="challenge-box no-break">
+    <div class="box-title">Weekly Challenge</div>
+    <p>Complete the sex discussion exercise with your spouse this week. Before you do, each of you spend 10 minutes writing your answers privately. Then sit down together — no phones, no distractions — and take turns sharing. Practice the listener's role: repeat back what you heard before responding.</p>
+  </div>
+</div>
+
+
+<!-- ============================================================
+     WEEK 3
+     ============================================================ -->
+<div class="page-break">
+  <div class="week-header">
+    <div class="week-number">Week Three</div>
+    <h2>Communicating Effectively</h2>
+    <div class="week-theme">Learning to say it and hear it well</div>
+  </div>
+
+  <div class="section-label">Scripture</div>
+  <div class="scripture-block no-break">
+    "My dear brothers and sisters, take note of this: Everyone should be quick to listen, slow to speak and slow to become angry."
+    <cite>— James 1:19 (NIV)</cite>
+  </div>
+
+  <div class="section-label">Session Overview</div>
+  <p class="week-overview">Communication failure happens when one person feels misunderstood. For the most part, communication breaks down when people fail to express what they feel in a clear, non-threatening way — or fail to truly listen. Effective communication has two equally important parts.</p>
+
+  <div class="symbis-box no-break">
+    <div class="symbis-header">
+      <div class="symbis-badge">SYMBIS Report</div>
+      <div class="symbis-title">Communication — No new pages this week</div>
+    </div>
+    <div class="symbis-timing">Bring the Communication pages you received in Week 2.</div>
+    <p class="symbis-intro">Use your existing SYMBIS Communication section alongside this week's teaching. Specifically:</p>
+    <ul class="symbis-questions">
+      <li>Revisit the <em>"communication skills I'd like to improve"</em> item you committed to in Week 2. How is it going?</li>
+      <li>Look at your talk style descriptions side by side. Where do your natural communication styles complement each other — and where do they create friction?</li>
+      <li>Which of the "tips for communicating with me" items from your report can you put into practice during this week's couple challenge?</li>
+    </ul>
+  </div>
+
+  <h3>Two Parts of Communicating Effectively</h3>
+
+  <div class="two-col no-break">
+    <div style="border:1px solid #e0e0e0;border-radius:6px;overflow:hidden;">
+      <div style="background:#1a1a2e;color:white;padding:10px 14px;font-weight:900;font-size:11pt;">Part 1: <span class="answer" style="color:#d4af37;">Assertive Communication</span></div>
+      <div style="padding:12px 14px;font-size:10pt;color:#444;">
+        <strong>Definition:</strong> The ability to express your feelings and ask for what you want in the relationship without being passive or aggressive.
+        <br><br>
+        No one can read your mind. If you want your spouse to understand you, you must share your thoughts and feelings in an effective manner so they can be received — not defended against.
+        <br><br>
+        <strong>Use "I" statements:</strong> "I feel..." and "I need..." rather than "You always..." or "You never..."
+      </div>
+    </div>
+    <div style="border:1px solid #e0e0e0;border-radius:6px;overflow:hidden;">
+      <div style="background:#1a1a2e;color:white;padding:10px 14px;font-weight:900;font-size:11pt;">Part 2: <span class="answer" style="color:#d4af37;">Active Listening</span></div>
+      <div style="padding:12px 14px;font-size:10pt;color:#444;">
+        <strong>Definition:</strong> Making a conscious effort to hear not only the words your spouse is saying, but more importantly, to understand the complete message being sent.
+        <br><br>
+        You then let your partner know you understand them by <strong>restating their message</strong> back to them — before you respond.
+        <br><br>
+        The goal is to listen to <em>understand</em>, not to listen to <em>respond</em>.
+      </div>
+    </div>
+  </div>
+
+  <h3>Five Guidelines for Active Listening</h3>
+
+  <div class="no-break">
+  <div class="rule-row">
+    <div class="rule-num">1.</div>
+    <div class="rule-content">
+      <div class="rule-title"><span class="answer">Pay attention</span></div>
+      <div class="rule-desc">Eliminate distractions. Put down your phone. Make eye contact. Give your full focus to your spouse — not just your ears.</div>
+    </div>
+  </div>
+
+  <div class="rule-row">
+    <div class="rule-num">2.</div>
+    <div class="rule-content">
+      <div class="rule-title">Show that you're <span class="answer">listening</span></div>
+      <div class="rule-desc">Use your body language. Nod. Lean in. Face your spouse. Your posture communicates whether you're genuinely present or just tolerating the conversation.</div>
+    </div>
+  </div>
+
+  <div class="rule-row">
+    <div class="rule-num">3.</div>
+    <div class="rule-content">
+      <div class="rule-title">Provide <span class="answer">feedback</span></div>
+      <div class="rule-desc">Tell your partner what you are hearing them say. "What I'm hearing you say is..." This confirms understanding and shows you were paying attention.</div>
+    </div>
+  </div>
+
+  <div class="rule-row">
+    <div class="rule-num">4.</div>
+    <div class="rule-content">
+      <div class="rule-title">Defer <span class="answer">judgment</span></div>
+      <div class="rule-desc">Do not get defensive or interrupt with counter-arguments while your spouse is still speaking. Let them finish. Your rebuttal can wait. First — understand.</div>
+    </div>
+  </div>
+
+  <div class="rule-row">
+    <div class="rule-num">5.</div>
+    <div class="rule-content">
+      <div class="rule-title">Respond <span class="answer">appropriately</span></div>
+      <div class="rule-desc">Do not get upset, angry, or display negative emotion when your spouse shares something difficult. Your emotional reaction determines whether they will trust you with honest communication again.</div>
+    </div>
+  </div>
+  </div>
+
+  <hr class="gold">
+
+  <div class="discussion-box no-break">
+    <div class="box-title">Couple Discussion — Week 3</div>
+    <p style="font-size:9.5pt;color:#777;margin-bottom:10px;"><em>This week's discussion is about how you communicate — not about the content of any particular disagreement. Keep it forward-focused.</em></p>
+    <ol>
+      <li>Of the five guidelines for active listening, which one is hardest for you personally? Why?</li>
+      <li>When you're trying to communicate something important, what does your spouse do that makes you feel most heard?</li>
+      <li>What is one change you could make this week to become a better listener for your spouse?</li>
+    </ol>
+  </div>
+
+  <div class="challenge-box no-break">
+    <div class="box-title">Weekly Challenge</div>
+    <p>This week, have one intentional conversation where you both practice assertive communication and active listening. Choose a topic that matters — something real — not just small talk. Before responding, each person must first summarize what they heard their spouse say. Only then may they respond.</p>
+  </div>
+</div>
+
+
+<!-- ============================================================
+     WEEK 4
+     ============================================================ -->
+<div class="page-break">
+  <div class="week-header">
+    <div class="week-number">Week Four</div>
+    <h2>Fighting Fair</h2>
+    <div class="week-theme">Turning conflict into connection</div>
+  </div>
+
+  <div class="section-label">Scripture</div>
+  <div class="scripture-block no-break">
+    "If it is possible, as far as it depends on you, live at peace with everyone."
+    <cite>— Romans 12:18 (NIV)</cite>
+  </div>
+
+  <div class="section-label">Session Overview</div>
+  <p class="week-overview">Conflict is inevitable in marriage. But when couples learn to resolve conflict well, it becomes an opportunity to grow closer — not further apart. The problem is not that couples argue. Complaining and airing grievances are actually healthy marital activities. The problem is when conflict escalates into one of four toxic patterns.</p>
+
+  <div class="symbis-box no-break">
+    <div class="symbis-header">
+      <div class="symbis-badge">SYMBIS Report</div>
+      <div class="symbis-title">Conflict — Distributed start of session</div>
+    </div>
+    <div class="symbis-timing">One section from your personal report will be handed out at the beginning of this session.</div>
+    <p class="symbis-intro">Use your SYMBIS Conflict pages alongside this week's teaching:</p>
+    <ul class="symbis-questions">
+      <li>Look at your conflict style description. Does it feel accurate? What would your spouse add or correct?</li>
+      <li>Review your <em>Hot Topics</em> list together — the issues most likely to spark tension in your relationship. Identify the top 2–3 that have already surfaced between you.</li>
+      <li>Look at the <em>Conflict Limiters</em> for each of you. Which ones do you currently use? Which ones do you want to start using?</li>
+      <li>After completing your Peace Plan this week, return to the Hot Topics list and choose one topic to apply it to first.</li>
+    </ul>
+  </div>
+
+  <h3>Four Toxic Ways of Interacting</h3>
+  <p>In order of least to most destructive:</p>
+
+  <div class="toxic-grid no-break">
+    <div class="toxic-card">
+      <div class="t-number">Most Common</div>
+      <div class="t-name"><span class="answer">Criticism</span></div>
+      <div class="t-desc">Attacking your spouse's <em>character</em> rather than a specific behavior. Criticisms start with "You always..." or "You never..." Complaints address a behavior; criticism attacks the person.</div>
+    </div>
+    <div class="toxic-card">
+      <div class="t-number">More Damaging</div>
+      <div class="t-name"><span class="answer">Contempt</span></div>
+      <div class="t-desc">The intent to insult and psychologically abuse. Eye-rolling, mockery, name-calling, dismissiveness. Contempt communicates, "I am better than you." It is the single greatest predictor of divorce.</div>
+    </div>
+    <div class="toxic-card">
+      <div class="t-number">Even More Damaging</div>
+      <div class="t-name"><span class="answer">Defensiveness</span></div>
+      <div class="t-desc">Once contempt appears, defensiveness follows. Rather than taking any responsibility, the person being attacked defends themselves and counter-attacks. The original issue gets buried.</div>
+    </div>
+    <div class="toxic-card">
+      <div class="t-number">Most Destructive</div>
+      <div class="t-name"><span class="answer">Stonewalling</span></div>
+      <div class="t-desc">Shutting down completely — no eye contact, no response, no engagement. Emotionally overwhelming, predominantly experienced by men (85%). The conversation cannot continue or heal when one person has shut the door.</div>
+    </div>
+  </div>
+
+  <h3>Nine Rules for Fighting Fair</h3>
+
+  <div class="no-break">
+  <div class="rule-row">
+    <div class="rule-num">1.</div>
+    <div class="rule-content">
+      <div class="rule-title"><span class="answer">Choose your battles carefully.</span></div>
+      <div class="rule-desc">90% of what couples fight about can be overlooked. Before raising a complaint, ask: is this worth it? Small things, over time, become the big things — so choose wisely, and let more go than you bring up.</div>
+    </div>
+  </div>
+  <div class="rule-row">
+    <div class="rule-num">2.</div>
+    <div class="rule-content">
+      <div class="rule-title"><span class="answer">Practice assertiveness and active listening.</span></div>
+      <div class="rule-desc">Apply what you learned in Week 3. Conflict is where these skills matter most. Are you actually hearing your spouse — or just waiting for your turn to respond?</div>
+    </div>
+  </div>
+  <div class="rule-row">
+    <div class="rule-num">3.</div>
+    <div class="rule-content">
+      <div class="rule-title"><span class="answer">Discuss issues at the appropriate time.</span></div>
+      <div class="rule-desc">You cannot have a rational conversation in a climate of hostility. Don't try to resolve things in the heat of the moment, or when either of you is tired, hungry, or stressed.</div>
+    </div>
+  </div>
+  <div class="rule-row">
+    <div class="rule-num">4.</div>
+    <div class="rule-content">
+      <div class="rule-title"><span class="answer">No blaming.</span></div>
+      <div class="rule-desc">Blaming only invites defensiveness and escalates the argument. It will not solve the problem. Focus your energy on finding a solution together, not assigning fault.</div>
+    </div>
+  </div>
+  <div class="rule-row">
+    <div class="rule-num">5.</div>
+    <div class="rule-content">
+      <div class="rule-title"><span class="answer">Stay in the present.</span></div>
+      <div class="rule-desc">Resist the urge to bring up past grievances. You can't change the past. Stick to one issue at a time. If you keep bringing up old wounds, it likely means those issues were never truly resolved — and that's a separate conversation.</div>
+    </div>
+  </div>
+  <div class="rule-row">
+    <div class="rule-num">6.</div>
+    <div class="rule-content">
+      <div class="rule-title"><span class="answer">No yelling.</span></div>
+      <div class="rule-desc">Yelling escalates everything and resolves nothing. If your emotions are running that high, step away and cool down. The meaning of your communication lies in how it lands — if it feels like yelling to your spouse, it is yelling.</div>
+    </div>
+  </div>
+  <div class="rule-row">
+    <div class="rule-num">7.</div>
+    <div class="rule-content">
+      <div class="rule-title"><span class="answer">No degrading language.</span></div>
+      <div class="rule-desc">Name-calling, insults, put-downs, and swearing show contempt for your spouse's dignity. Words cannot be unheard. Once spoken, they require significant work to heal.</div>
+    </div>
+  </div>
+  <div class="rule-row">
+    <div class="rule-num">8.</div>
+    <div class="rule-content">
+      <div class="rule-title"><span class="answer">No use of force.</span></div>
+      <div class="rule-desc">No physical force or threats of force — ever. This includes pushing, shoving, hitting, throwing things, or punching walls. Each person in this marriage has the right to feel completely safe. There are no exceptions to this rule.</div>
+    </div>
+  </div>
+  <div class="rule-row">
+    <div class="rule-num">9.</div>
+    <div class="rule-content">
+      <div class="rule-title"><span class="answer">No talk of divorce.</span></div>
+      <div class="rule-desc">Threatening to leave the relationship is manipulative and corrosive. It creates anxiety about abandonment and erodes the foundation of trust. Remove this word from your conflict vocabulary entirely.</div>
+    </div>
+  </div>
+  </div>
+
+  <hr class="gold">
+
+  <div class="discussion-box no-break">
+    <div class="box-title">Couple Discussion — Week 4</div>
+    <p style="font-size:9.5pt;color:#777;margin-bottom:10px;"><em>Think about a recent conflict — not to relitigate it, but to learn from it.</em></p>
+    <ol>
+      <li>Which of the four toxic patterns do you most easily fall into during conflict? What usually triggers it?</li>
+      <li>Which of the nine rules do you think would most improve your conflict patterns as a couple? Why?</li>
+      <li>Think back to a conflict where you actually came out feeling closer. What did you do differently in that situation?</li>
+    </ol>
+  </div>
+
+  <div class="challenge-box no-break">
+    <div class="box-title">Weekly Challenge</div>
+    <p>This week, complete your <strong>Peace Plan</strong> together — you'll find the template in the Appendix. Read through the example together, then customize it to fit your marriage. Sign it together when you're done. Keep it somewhere you can both access it.</p>
+  </div>
+</div>
+
+
+<!-- ============================================================
+     WEEK 5
+     ============================================================ -->
+<div class="page-break">
+  <div class="week-header">
+    <div class="week-number">Week Five</div>
+    <h2>Money &amp; Marriage</h2>
+    <div class="week-theme">Building financial unity as a couple</div>
+  </div>
+
+  <div class="section-label">Scripture</div>
+  <div class="scripture-block no-break">
+    "Suppose one of you wants to build a tower. Will he not first sit down and estimate the cost to see if he has enough money to complete it?"
+    <cite>— Luke 14:28 (NIV)</cite>
+  </div>
+
+  <div class="section-label">Session Overview</div>
+  <p class="week-overview">Money is one of the leading causes of conflict and divorce. For men, finances are often tied to significance — the sense of being a provider and protector. For women, finances are often tied to security — the peace of mind that comes from knowing the family is stable. Understanding this difference is the first step toward financial unity.</p>
+
+  <div class="symbis-box no-break">
+    <div class="symbis-header">
+      <div class="symbis-badge">SYMBIS Report</div>
+      <div class="symbis-title">Finances &amp; Roles — Distributed end of session</div>
+    </div>
+    <div class="symbis-timing">Two sections from your personal report will be handed out at the close of this session — take them home and work through them together.</div>
+    <p class="symbis-intro">Use your SYMBIS Finances and Roles pages to go deeper on what was taught today:</p>
+    <ul class="symbis-questions">
+      <li>Review your spender/saver profiles side by side. Where do they align — and where do they pull in opposite directions?</li>
+      <li>Complete these sentence starters out loud together: <em>"In my home growing up, money was..."</em> and <em>"When I think about our financial future..."</em></li>
+      <li>What money habits from your family of origin do you want to keep? Which ones do you want to leave behind?</li>
+      <li>From the Roles section: go through the household responsibilities list. Mark each item as His, Hers, or Shared. Where do your assumptions differ — and where is one of you assuming the other will handle it?</li>
+    </ul>
+  </div>
+
+  <h3>Ten Principles for Money &amp; Marriage</h3>
+
+  <div class="no-break">
+  <div class="tip-row">
+    <div class="tip-number">1</div>
+    <div class="tip-content">
+      <div class="tip-title"><span class="answer">Merge</span> your finances.</div>
+      <div class="tip-desc">Two becoming one is not just a spiritual principle — it's a financial one. "His money" and "her money" creates division. Build your financial life together.</div>
+    </div>
+  </div>
+  <div class="tip-row">
+    <div class="tip-number">2</div>
+    <div class="tip-content">
+      <div class="tip-title">Put <span class="answer">God first</span> in your finances.</div>
+      <div class="tip-desc">Everything you have belongs to God. Giving is not an afterthought — it's the starting point. Couples who give regularly report less financial conflict and greater satisfaction in marriage.</div>
+    </div>
+  </div>
+  <div class="tip-row">
+    <div class="tip-number">3</div>
+    <div class="tip-content">
+      <div class="tip-title">Set <span class="answer">goals</span> together.</div>
+      <div class="tip-desc">Something powerful happens when couples dream together. Where do you want to be in 5 years? 10? 20? Write it down. Goals you create together are goals you will actually pursue together.</div>
+    </div>
+  </div>
+  <div class="tip-row">
+    <div class="tip-number">4</div>
+    <div class="tip-content">
+      <div class="tip-title">Create a <span class="answer">spending plan</span> as a couple.</div>
+      <div class="tip-desc">A budget is not a cage — it's a plan for your money that reflects your values and goals. Know how much you earn, where money is being spent, what you owe, and what you own.</div>
+    </div>
+  </div>
+  <div class="tip-row">
+    <div class="tip-number">5</div>
+    <div class="tip-content">
+      <div class="tip-title">Create an <span class="answer">emergency fund</span> for 3–6 months of expenses.</div>
+      <div class="tip-desc">An emergency fund is the single most effective buffer against financial stress in marriage. When the car breaks down or a job is lost, you're ready — not reactive.</div>
+    </div>
+  </div>
+  <div class="tip-row">
+    <div class="tip-number">6</div>
+    <div class="tip-content">
+      <div class="tip-title">Minimize use of <span class="answer">debts and credit cards</span>.</div>
+      <div class="tip-desc">Debt is borrowed future income. Every debt payment is money that can't go toward your goals. Work aggressively to become and remain debt-free.</div>
+    </div>
+  </div>
+  <div class="tip-row">
+    <div class="tip-number">7</div>
+    <div class="tip-content">
+      <div class="tip-title"><span class="answer">Save</span> a portion of every check.</div>
+      <div class="tip-desc">Make saving automatic whenever possible. Set a goal to save at least 10% for the future. Pay yourself first, before discretionary spending begins.</div>
+    </div>
+  </div>
+  <div class="tip-row">
+    <div class="tip-number">8</div>
+    <div class="tip-content">
+      <div class="tip-title">Make monthly car and home expenses less than <span class="answer">7%</span> and <span class="answer">20%</span> of income, respectively.</div>
+      <div class="tip-desc">These are practical guardrails to prevent housing and transportation from crowding out savings, giving, and everything else. If your numbers are higher, create a plan to bring them down over time.</div>
+    </div>
+  </div>
+  <div class="tip-row">
+    <div class="tip-number">9</div>
+    <div class="tip-content">
+      <div class="tip-title">Who pays the bills? <span class="answer">Whoever is best at it.</span></div>
+      <div class="tip-desc">This is not a male or female role. Determine which of you is more detail-oriented and consistent — and make that person the "CFO" of the household. The other spouse stays informed and involved, even if they're not the one paying.</div>
+    </div>
+  </div>
+  <div class="tip-row">
+    <div class="tip-number">10</div>
+    <div class="tip-content">
+      <div class="tip-title"><span class="answer">Communicate</span> about your finances.</div>
+      <div class="tip-desc">Have a regular "money date" — a scheduled, low-pressure time to review your budget together, celebrate wins, and talk about adjustments. Transparency in finances creates trust.</div>
+    </div>
+  </div>
+  </div>
+
+  <hr class="gold">
+
+  <div class="discussion-box no-break">
+    <div class="box-title">Couple Discussion — Week 5</div>
+    <p style="font-size:9.5pt;color:#777;margin-bottom:10px;"><em>Approach this conversation as partners building something together, not as critics pointing out what the other is doing wrong.</em></p>
+    <ol>
+      <li>Which of the ten principles feels most urgent for your marriage right now? Why?</li>
+      <li>Are your finances truly merged? If not, what would it take to get there?</li>
+      <li>What is one financial goal you both want to accomplish in the next 12 months? What would need to change in your spending plan to make it possible?</li>
+    </ol>
+  </div>
+
+  <div class="challenge-box no-break">
+    <div class="box-title">Weekly Challenge</div>
+    <p>This week, complete the <strong>Financial Health Self-Assessment</strong> in the Appendix — each of you separately. Then sit down together and compare your answers. Use the results to identify the <strong>one practical action step</strong> you will both commit to in the next 30 days.</p>
+  </div>
+</div>
+
+
+<!-- ============================================================
+     WEEK 6
+     ============================================================ -->
+<div class="page-break">
+  <div class="week-header">
+    <div class="week-number">Week Six</div>
+    <h2>Harmony &amp; Expectations</h2>
+    <div class="week-theme">Choosing real love — every day</div>
+  </div>
+
+  <div class="section-label">Scripture</div>
+  <div class="scripture-block no-break">
+    "Love is patient, love is kind. It does not envy, it does not boast, it is not proud... It always protects, always trusts, always hopes, always perseveres. Love never fails."
+    <cite>— 1 Corinthians 13:4, 7–8 (NIV)</cite>
+  </div>
+
+  <div class="section-label">Session Overview</div>
+  <p class="week-overview">Every marriage begins with the "in love" experience — that intoxicating, euphoric rush that makes you feel like you've found the one perfect person on earth. Studies show this feeling has an average lifespan of two years. Eventually, the fog lifts, the warts show up, and you are left with a choice. This week is about what you choose after that moment.</p>
+
+  <div class="symbis-box no-break">
+    <div class="symbis-header">
+      <div class="symbis-badge">SYMBIS Report</div>
+      <div class="symbis-title">Spirituality — Distributed start of session</div>
+    </div>
+    <div class="symbis-timing">One section from your personal report will be handed out at the beginning of this session.</div>
+    <p class="symbis-intro">Review your SYMBIS Spirituality pages as you close out the cohort together:</p>
+    <ul class="symbis-questions">
+      <li>Compare your worship styles. Are they similar enough to attend the same church comfortably, or is there negotiation needed?</li>
+      <li>Look at the spiritual beliefs alignment section. Where is there strong agreement — and where is there a gap you haven't talked through yet?</li>
+      <li>Which spiritual practices from the checklist are you already doing together? Which ones do you want to add?</li>
+      <li><strong>Closing reflection:</strong> Return to the <em>"I feel most loved when you..."</em> statements from your Week 1 SYMBIS pages. After six weeks together, what has shifted or deepened in how you understand your partner's answer?</li>
+    </ul>
+  </div>
+
+  <h3>The "In Love" Experience vs. Real Love</h3>
+
+  <div class="two-col no-break">
+    <div style="border:1px solid #e0e0e0;border-radius:6px;overflow:hidden;">
+      <div style="background:#888;color:white;padding:10px 14px;font-weight:900;font-size:11pt;">The "In Love" Experience</div>
+      <div style="padding:12px 14px;font-size:10pt;color:#444;">
+        <ul style="padding-left:1.1em;">
+          <li>Euphoric emotional obsession</li>
+          <li>Sees only the best in your partner</li>
+          <li>Effortless — driven by chemistry</li>
+          <li>Average lifespan: <strong>2 years</strong></li>
+          <li>Not a choice — it simply happens</li>
+          <li>Cannot sustain a marriage alone</li>
+        </ul>
+      </div>
+    </div>
+    <div style="border:2px solid #d4af37;border-radius:6px;overflow:hidden;">
+      <div style="background:#1a1a2e;color:#d4af37;padding:10px 14px;font-weight:900;font-size:11pt;">Real Love</div>
+      <div style="padding:12px 14px;font-size:10pt;color:#444;">
+        <ul style="padding-left:1.1em;">
+          <li>A daily choice and commitment</li>
+          <li>Sees flaws clearly and loves anyway</li>
+          <li>Requires effort, discipline, and sacrifice</li>
+          <li>Lifespan: <strong>a lifetime</strong></li>
+          <li>A conscious decision to put the other first</li>
+          <li>The only kind that builds a great marriage</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <p style="margin-top:0.15in;">When the "in love" experience ends, there are three options:</p>
+  <ol>
+    <li>Resolve to live a life of misery with your spouse.</li>
+    <li>Jump ship and try again (50% of marriages end in divorce).</li>
+    <li><strong>Recognize the "in love" experience for what it was — a temporary emotional high — and choose to pursue real love with your spouse.</strong></li>
+  </ol>
+
+  <p>Option three is what this cohort has been preparing you for. Real love begins with a declaration: <em>"I am married to you, and I choose to look out for your interests."</em></p>
+
+  <h3>The Five Love Languages</h3>
+  <p>Each of us receives love in a different way. If you've been expressing love in <em>your</em> language and your spouse needs it in <em>theirs</em>, your efforts may not be landing. Understanding and speaking your spouse's primary love language is one of the most practical ways to sustain real love over a lifetime.</p>
+
+  <table class="no-break">
+    <thead>
+      <tr><th>Love Language</th><th>What It Looks Like</th><th>Key Need</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Words of Affirmation</strong></td>
+        <td>Verbal compliments, words of appreciation and encouragement, kind words</td>
+        <td>To feel appreciated and valued through words</td>
+      </tr>
+      <tr>
+        <td><strong>Quality Time</strong></td>
+        <td>Undivided attention, face-to-face conversation, doing things together</td>
+        <td>To feel chosen and prioritized</td>
+      </tr>
+      <tr>
+        <td><strong>Receiving Gifts</strong></td>
+        <td>Thoughtful gifts (not necessarily expensive) that say "I was thinking of you"</td>
+        <td>To feel remembered and cherished</td>
+      </tr>
+      <tr>
+        <td><strong>Acts of Service</strong></td>
+        <td>Doing helpful things — cooking a meal, handling a task, easing a burden</td>
+        <td>Actions speak louder than words</td>
+      </tr>
+      <tr>
+        <td><strong>Physical Touch</strong></td>
+        <td>Hugs, hand-holding, a hand on the shoulder, sitting close</td>
+        <td>Physical presence and connection</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p class="note">Take the full Love Languages Quiz in the Appendix to discover your primary love language.</p>
+
+  <hr class="gold">
+
+  <div class="discussion-box no-break">
+    <div class="box-title">Couple Discussion — Week 6</div>
+    <p style="font-size:9.5pt;color:#777;margin-bottom:10px;"><em>This is your final discussion as part of this cohort. Make it count.</em></p>
+    <ol>
+      <li>Looking back over these six weeks, what is the most significant thing you've learned — about yourself, your spouse, or your marriage?</li>
+      <li>What is one area where you feel your marriage has already grown through this cohort?</li>
+      <li>Where do you feel most in harmony as a couple right now? Where do you most want to grow?</li>
+      <li>What is one specific, concrete commitment you're making to your marriage coming out of this cohort?</li>
+    </ol>
+  </div>
+
+  <div class="challenge-box no-break">
+    <div class="box-title">Final Challenge</div>
+    <p>This week, each of you take the <strong>Five Love Languages Quiz</strong> in the Appendix. Share your results with each other. Then do the homework for your spouse's love language — one intentional act every day for the next week. And then keep going.</p>
+    <br>
+    <p style="color:#d4af37;font-weight:700;">You have what you need. Now choose each other — every day.</p>
+  </div>
+</div>
+
+
+<!-- ============================================================
+     APPENDIX A — PEACE PLAN
+     ============================================================ -->
+<div class="page-break">
+  <h2 style="font-family:'Playfair Display',Georgia,serif;font-size:22pt;color:#1a1a2e;border-bottom:2px solid #d4af37;padding-bottom:0.1in;margin-bottom:0.2in;">Appendix A: Our Peace Plan</h2>
+
+  <div class="scripture-block no-break">
+    "If it is possible, as far as it depends on you, live at peace with everyone."
+    <cite>— Romans 12:18 (NIV)</cite>
+  </div>
+
+  <p style="margin:0.15in 0;">Your Peace Plan is a written covenant between you and your spouse — an agreement about how you will handle conflict before it happens. Couples who have a plan go into conflict with tools, not just emotions. Review the example below, then write your own.</p>
+
+  <div class="intro-box no-break">
+    <p><strong>Example — John &amp; Jane Doe's Peace Plan</strong></p>
+    <p style="font-size:9.5pt;color:#777;margin-top:4px;margin-bottom:10px;">Agreed upon: ___________________</p>
+    <p style="font-size:9.5pt;">We agree that we will attempt to keep our marriage as conflict-free as possible. When conflict occurs, this is our plan to deal with it constructively:</p>
+    <ul style="font-size:9.5pt;margin-top:8px;">
+      <li>We will regularly schedule meetings to discuss relationship-related issues.</li>
+      <li>We declare date nights and special times together conflict-free — we agree not to discuss potentially divisive issues during these reserved times.</li>
+      <li>We commit to addressing conflict, or agreeing on a time to address it, before going to sleep at night.</li>
+      <li>We agree that if conflict is raised, the other spouse may defer the discussion to an agreed-upon later time.</li>
+      <li>We agree that when conflict is escalating, either of us can call a time-out.</li>
+      <li>We will avoid name-calling, abusive language, and use of force.</li>
+      <li>We vow never to use the word "divorce" in a heated conversation.</li>
+      <li>We will use assertive communication and active listening when we are struggling to communicate.</li>
+      <li>We commit to praying before and after dealing with conflict.</li>
+    </ul>
+  </div>
+
+  <h3 style="margin-top:0.2in;">Our Peace Plan</h3>
+  <div class="peace-plan">
+    <p class="covenant-line">We, _________________________ and _________________________, agree to this plan, dated _____________.</p>
+    <p style="font-size:9.5pt;color:#555;margin-bottom:12px;">Write your own commitments below. Be specific to how <em>you</em> as a couple operate best.</p>
+    <div style="margin-bottom:12px;"><div class="answer-line"></div></div>
+    <div style="margin-bottom:12px;"><div class="answer-line"></div></div>
+    <div style="margin-bottom:12px;"><div class="answer-line"></div></div>
+    <div style="margin-bottom:12px;"><div class="answer-line"></div></div>
+    <div style="margin-bottom:12px;"><div class="answer-line"></div></div>
+    <div style="margin-bottom:12px;"><div class="answer-line"></div></div>
+    <div style="margin-bottom:12px;"><div class="answer-line"></div></div>
+    <div style="margin-bottom:12px;"><div class="answer-line"></div></div>
+    <div class="signature-block">
+      <div class="sig-line">Signature</div>
+      <div class="sig-line">Signature</div>
+      <div class="sig-line">Date</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ============================================================
+     APPENDIX B — FINANCIAL HEALTH SELF-ASSESSMENT
+     ============================================================ -->
+<div class="page-break">
+  <h2 style="font-family:'Playfair Display',Georgia,serif;font-size:22pt;color:#1a1a2e;border-bottom:2px solid #d4af37;padding-bottom:0.1in;margin-bottom:0.15in;">Appendix B: Financial Health Self-Assessment</h2>
+
+  <p style="margin-bottom:0.15in;font-size:10.5pt;">Complete this assessment privately. Ask yourself: <em>"Am I consistently doing this?"</em> Answer yes or no honestly. If you answer No, check the next steps that apply. This is for you and whoever you choose to share it with.</p>
+
+  <div class="assess-item no-break">
+    <div class="assess-header">
+      <div class="assess-number">1</div>
+      <div class="assess-question">Are you current on all essential bills (rent/mortgage, car, utilities) and free of high-interest predatory loans (payday loans, title loans, etc.)?</div>
+      <div class="assess-yesno"><span><span class="check-box"></span>Yes</span><span><span class="check-box"></span>No</span></div>
+    </div>
+    <ul class="assess-steps">
+      <li>If No: Seek financial assistance through a biblical financial counseling ministry.</li>
+      <li>If No: Complete recommended action steps from a financial counselor.</li>
+    </ul>
+  </div>
+
+  <div class="assess-item no-break">
+    <div class="assess-header">
+      <div class="assess-number">2</div>
+      <div class="assess-question">Are you using a written, balanced budget and consistently spending less than you earn?</div>
+      <div class="assess-yesno"><span><span class="check-box"></span>Yes</span><span><span class="check-box"></span>No</span></div>
+    </div>
+    <ul class="assess-steps">
+      <li>If No: Sign up for a financial education class or workshop.</li>
+      <li>If No: Meet with a money coach to balance your budget.</li>
+      <li>If No: Track your spending for 30–60 days to see where it's actually going.</li>
+    </ul>
+  </div>
+
+  <div class="assess-item no-break">
+    <div class="assess-header">
+      <div class="assess-number">3</div>
+      <div class="assess-question">Do you know how much you earn, where your money is spent, your credit rating, and your household net worth?</div>
+      <div class="assess-yesno"><span><span class="check-box"></span>Yes</span><span><span class="check-box"></span>No</span></div>
+    </div>
+    <ul class="assess-steps">
+      <li>If No: Complete a financial statement listing what you own and what you owe.</li>
+      <li>If No: Request a free credit report at annualcreditreport.com.</li>
+    </ul>
+  </div>
+
+  <div class="assess-item no-break">
+    <div class="assess-header">
+      <div class="assess-number">4</div>
+      <div class="assess-question">Are you maintaining 3 to 6 months of expenses in emergency savings?</div>
+      <div class="assess-yesno"><span><span class="check-box"></span>Yes</span><span><span class="check-box"></span>No</span></div>
+    </div>
+    <ul class="assess-steps">
+      <li>If No: Open a dedicated emergency savings account.</li>
+      <li>If No: Adjust your budget to include regular monthly savings.</li>
+      <li>If No: Set up an automatic transfer to your savings account.</li>
+    </ul>
+  </div>
+
+  <div class="assess-item no-break">
+    <div class="assess-header">
+      <div class="assess-number">5</div>
+      <div class="assess-question">Do you have a plan and are you actively working toward becoming (or remaining) debt-free?</div>
+      <div class="assess-yesno"><span><span class="check-box"></span>Yes</span><span><span class="check-box"></span>No</span></div>
+    </div>
+    <ul class="assess-steps">
+      <li>If No: Create a debt list in order from lowest to highest balance.</li>
+      <li>If No: Meet with a money coach to develop a debt repayment plan.</li>
+    </ul>
+  </div>
+
+  <div class="assess-item no-break">
+    <div class="assess-header">
+      <div class="assess-number">6</div>
+      <div class="assess-question">Do you have adequate life insurance, and is your estate plan (will, trust) in order?</div>
+      <div class="assess-yesno"><span><span class="check-box"></span>Yes</span><span><span class="check-box"></span>No</span></div>
+    </div>
+    <ul class="assess-steps">
+      <li>If No: Complete a life insurance needs assessment with an agent.</li>
+      <li>If No: Meet with an estate attorney to complete a will and/or trust.</li>
+    </ul>
+  </div>
+
+  <div class="assess-item no-break">
+    <div class="assess-header">
+      <div class="assess-number">7</div>
+      <div class="assess-question">Are you investing 10–15% of your income for the future?</div>
+      <div class="assess-yesno"><span><span class="check-box"></span>Yes</span><span><span class="check-box"></span>No</span></div>
+    </div>
+    <ul class="assess-steps">
+      <li>If No: Start by investing in your 401k up to your company match (it's free money).</li>
+      <li>If No: Meet with a financial advisor to create an investment plan.</li>
+    </ul>
+  </div>
+
+  <div style="background:#f7f4ed;border:1px solid #d4af37;border-radius:4px;padding:12px 16px;margin-top:0.2in;">
+    <strong>After completing individually:</strong> Compare your answers with your spouse. Identify the <strong>one action step</strong> you both agree to take within the next 30 days. Write it here:
+    <div class="answer-line" style="margin-top:12px;"></div>
+    <div class="answer-line" style="margin-top:8px;"></div>
+  </div>
+</div>
+
+
+<!-- ============================================================
+     APPENDIX C — LOVE LANGUAGES QUIZ
+     ============================================================ -->
+<div class="page-break">
+  <h2 style="font-family:'Playfair Display',Georgia,serif;font-size:22pt;color:#1a1a2e;border-bottom:2px solid #d4af37;padding-bottom:0.1in;margin-bottom:0.15in;">Appendix C: The Five Love Languages Quiz</h2>
+
+  <p class="quiz-intro">For each pair of statements below, circle the one that best describes you within your relationship. There are no right or wrong answers.</p>
+
+  <div class="quiz-item no-break"><span class="q-num">1.</span> <label class="choice"><span></span>I like to receive encouraging or affirming notes. [A]</label> <label class="choice"><span></span>I like to be hugged. [E]</label></div>
+  <div class="quiz-item no-break"><span class="q-num">2.</span> <label class="choice"><span></span>I like to spend one-to-one time with close friends and loved ones. [B]</label> <label class="choice"><span></span>I feel loved when someone gives me practical help. [D]</label></div>
+  <div class="quiz-item no-break"><span class="q-num">3.</span> <label class="choice"><span></span>I like it when people give me gifts. [C]</label> <label class="choice"><span></span>I like leisurely visits with friends and loved ones. [B]</label></div>
+  <div class="quiz-item no-break"><span class="q-num">4.</span> <label class="choice"><span></span>I feel loved when people do things to help me. [D]</label> <label class="choice"><span></span>I feel loved when people give me a reassuring hug or handshake. [E]</label></div>
+  <div class="quiz-item no-break"><span class="q-num">5.</span> <label class="choice"><span></span>I feel loved when someone I admire puts their arm around me. [E]</label> <label class="choice"><span></span>I feel loved when I receive a gift from someone I love. [C]</label></div>
+  <div class="quiz-item no-break"><span class="q-num">6.</span> <label class="choice"><span></span>I like to go places with friends or loved ones. [B]</label> <label class="choice"><span></span>I like physical affection with friends who are special to me. [E]</label></div>
+  <div class="quiz-item no-break"><span class="q-num">7.</span> <label class="choice"><span></span>Visible symbols of love (such as gifts) are important to me. [C]</label> <label class="choice"><span></span>I feel loved when people affirm me verbally. [A]</label></div>
+  <div class="quiz-item no-break"><span class="q-num">8.</span> <label class="choice"><span></span>I like to sit close to people I enjoy being around. [E]</label> <label class="choice"><span></span>I like it when people tell me I'm attractive or capable. [A]</label></div>
+  <div class="quiz-item no-break"><span class="q-num">9.</span> <label class="choice"><span></span>I like to spend time with friends and loved ones. [B]</label> <label class="choice"><span></span>I like to receive little gifts from friends and loved ones. [C]</label></div>
+  <div class="quiz-item no-break"><span class="q-num">10.</span> <label class="choice"><span></span>Words of acceptance are important to me. [A]</label> <label class="choice"><span></span>I know someone loves me when they help me. [D]</label></div>
+  <div class="quiz-item no-break"><span class="q-num">11.</span> <label class="choice"><span></span>I like being together and doing things with friends and loved ones. [B]</label> <label class="choice"><span></span>I like it when kind words are spoken to me. [A]</label></div>
+  <div class="quiz-item no-break"><span class="q-num">12.</span> <label class="choice"><span></span>What someone does affects me far more than what they say. [D]</label> <label class="choice"><span></span>Hugs make me feel connected and valued. [E]</label></div>
+  <div class="quiz-item no-break"><span class="q-num">13.</span> <label class="choice"><span></span>I value praise and try to avoid criticism. [A]</label> <label class="choice"><span></span>Several small gifts mean more to me than one large gift. [C]</label></div>
+  <div class="quiz-item no-break"><span class="q-num">14.</span> <label class="choice"><span></span>I feel close to someone when we are talking or doing things together. [B]</label> <label class="choice"><span></span>I feel closer to friends and loved ones when we share physical affection. [E]</label></div>
+  <div class="quiz-item no-break"><span class="q-num">15.</span> <label class="choice"><span></span>I like for people to compliment my achievements. [A]</label> <label class="choice"><span></span>I know people love me when they do things for me they don't enjoy doing. [D]</label></div>
+  <div class="quiz-item no-break"><span class="q-num">16.</span> <label class="choice"><span></span>I like when people show genuine interest in what I'm saying. [B]</label> <label class="choice"><span></span>I like when people go out of their way to greet me with warmth. [E]</label></div>
+  <div class="quiz-item no-break"><span class="q-num">17.</span> <label class="choice"><span></span>I feel loved when friends and loved ones help me with jobs or projects. [D]</label> <label class="choice"><span></span>I really enjoy receiving gifts from friends and loved ones. [C]</label></div>
+  <div class="quiz-item no-break"><span class="q-num">18.</span> <label class="choice"><span></span>I like for people to compliment my appearance. [A]</label> <label class="choice"><span></span>I feel loved when people take time to understand my feelings. [B]</label></div>
+  <div class="quiz-item no-break"><span class="q-num">19.</span> <label class="choice"><span></span>I feel secure when a special person is physically close to me. [E]</label> <label class="choice"><span></span>Acts of service make me feel loved. [D]</label></div>
+  <div class="quiz-item no-break"><span class="q-num">20.</span> <label class="choice"><span></span>I appreciate the many things that special people do for me. [D]</label> <label class="choice"><span></span>I like to receive handmade or thoughtful gifts from people I love. [C]</label></div>
+  <div class="quiz-item no-break"><span class="q-num">21.</span> <label class="choice"><span></span>I really enjoy the feeling of someone giving me their undivided attention. [B]</label> <label class="choice"><span></span>I really enjoy the feeling of someone doing an act of service for me. [D]</label></div>
+  <div class="quiz-item no-break"><span class="q-num">22.</span> <label class="choice"><span></span>I feel loved when a person celebrates my birthday with a gift. [C]</label> <label class="choice"><span></span>I feel loved when a person celebrates my birthday with meaningful words. [A]</label></div>
+  <div class="quiz-item no-break"><span class="q-num">23.</span> <label class="choice"><span></span>I know a person is thinking of me when they give me a gift. [C]</label> <label class="choice"><span></span>I feel loved when a person helps me with my chores or tasks. [D]</label></div>
+  <div class="quiz-item no-break"><span class="q-num">24.</span> <label class="choice"><span></span>I appreciate it when someone listens patiently and doesn't interrupt me. [B]</label> <label class="choice"><span></span>I appreciate it when someone remembers special days with a gift. [C]</label></div>
+  <div class="quiz-item no-break"><span class="q-num">25.</span> <label class="choice"><span></span>I like knowing loved ones are concerned enough to help with my daily tasks. [D]</label> <label class="choice"><span></span>I enjoy extended time with someone who is special to me. [B]</label></div>
+  <div class="quiz-item no-break"><span class="q-num">26.</span> <label class="choice"><span></span>I don't mind a warm greeting from friends I am close to. [E]</label> <label class="choice"><span></span>Receiving a gift given for no special reason excites me. [C]</label></div>
+  <div class="quiz-item no-break"><span class="q-num">27.</span> <label class="choice"><span></span>I like to be told that I am appreciated. [A]</label> <label class="choice"><span></span>I like for a person to give me their full attention when talking. [B]</label></div>
+  <div class="quiz-item no-break"><span class="q-num">28.</span> <label class="choice"><span></span>Gifts from a friend or loved one are always special to me. [C]</label> <label class="choice"><span></span>I feel good when a friend or loved one touches me warmly. [E]</label></div>
+  <div class="quiz-item no-break"><span class="q-num">29.</span> <label class="choice"><span></span>I feel loved when a person enthusiastically does a task I have requested. [D]</label> <label class="choice"><span></span>I feel loved when I am told how much I am appreciated. [A]</label></div>
+  <div class="quiz-item no-break"><span class="q-num">30.</span> <label class="choice"><span></span>I need physical contact with people I love every day. [E]</label> <label class="choice"><span></span>I need words of encouragement and affirmation every day. [A]</label></div>
+
+  <hr class="gold">
+
+  <h3>Scoring</h3>
+  <p>Count how many of each letter you circled and record your totals below:</p>
+
+  <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin:0.15in 0;" class="no-break">
+    <div style="text-align:center;border:1px solid #e0e0e0;border-radius:6px;overflow:hidden;">
+      <div style="background:#1a1a2e;color:#d4af37;font-weight:900;font-size:16pt;padding:8px;">A</div>
+      <div style="padding:8px;font-size:9pt;color:#555;">Total: _____</div>
+    </div>
+    <div style="text-align:center;border:1px solid #e0e0e0;border-radius:6px;overflow:hidden;">
+      <div style="background:#1a1a2e;color:#d4af37;font-weight:900;font-size:16pt;padding:8px;">B</div>
+      <div style="padding:8px;font-size:9pt;color:#555;">Total: _____</div>
+    </div>
+    <div style="text-align:center;border:1px solid #e0e0e0;border-radius:6px;overflow:hidden;">
+      <div style="background:#1a1a2e;color:#d4af37;font-weight:900;font-size:16pt;padding:8px;">C</div>
+      <div style="padding:8px;font-size:9pt;color:#555;">Total: _____</div>
+    </div>
+    <div style="text-align:center;border:1px solid #e0e0e0;border-radius:6px;overflow:hidden;">
+      <div style="background:#1a1a2e;color:#d4af37;font-weight:900;font-size:16pt;padding:8px;">D</div>
+      <div style="padding:8px;font-size:9pt;color:#555;">Total: _____</div>
+    </div>
+    <div style="text-align:center;border:1px solid #e0e0e0;border-radius:6px;overflow:hidden;">
+      <div style="background:#1a1a2e;color:#d4af37;font-weight:900;font-size:16pt;padding:8px;">E</div>
+      <div style="padding:8px;font-size:9pt;color:#555;">Total: _____</div>
+    </div>
+  </div>
+
+  <div class="quiz-key no-break">
+    <p style="font-weight:700;margin-bottom:8px;">Your highest score is your primary love language:</p>
+    <div class="key-row"><strong>A = Words of Affirmation</strong> — You feel most loved through verbal encouragement, compliments, and appreciation.</div>
+    <div class="key-row"><strong>B = Quality Time</strong> — You feel most loved through undivided attention, real conversation, and doing things together.</div>
+    <div class="key-row"><strong>C = Receiving Gifts</strong> — You feel most loved when someone takes the time to think of you and bring you something meaningful.</div>
+    <div class="key-row"><strong>D = Acts of Service</strong> — You feel most loved when someone does helpful things for you — actions speak louder than words.</div>
+    <div class="key-row"><strong>E = Physical Touch</strong> — You feel most loved through physical presence: hugs, hand-holding, sitting close, and a touch on the shoulder.</div>
+  </div>
+
+  <div class="discussion-box no-break" style="margin-top:0.2in;">
+    <div class="box-title">Love Language Homework</div>
+    <p style="margin-bottom:8px;">My spouse's primary love language is: <strong>_______________________________</strong></p>
+    <p style="font-size:10pt;">This week, do one intentional act every day that speaks your spouse's love language — not yours. Make it specific, genuine, and consistent. Pay attention to how they respond.</p>
+  </div>
+</div>
+
+</body>
+</html>
