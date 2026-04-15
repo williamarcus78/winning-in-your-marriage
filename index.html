@@ -38,54 +38,155 @@
 
   /* ---- Cover Page ---- */
   .cover {
-    height: 100vh;
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
-    background: #1a1a2e;
+    background: #0f0f1e;
     color: white;
-    padding: 2in 1in;
     min-height: 9in;
+    height: 100vh;
+    overflow: hidden;
+    padding: 0;
   }
 
-  .cover .series-tag {
-    font-size: 10pt;
-    letter-spacing: 0.2em;
+  .cover-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -52%);
+    width: 160%;
+    height: 100%;
+    background: radial-gradient(ellipse at center, #1f2045 0%, #0f0f1e 65%);
+    pointer-events: none;
+  }
+
+  .cover-border {
+    position: absolute;
+    inset: 0.28in;
+    border: 1px solid rgba(212,175,55,0.25);
+    pointer-events: none;
+  }
+
+  .cover-border-inner {
+    position: absolute;
+    inset: 0.36in;
+    border: 1px solid rgba(212,175,55,0.1);
+    pointer-events: none;
+  }
+
+  .cover-top {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0.65in;
+    gap: 0;
+  }
+
+  .cover-tag {
+    font-size: 7.5pt;
+    letter-spacing: 0.3em;
     text-transform: uppercase;
     color: #d4af37;
-    margin-bottom: 0.4in;
+    font-weight: 700;
+    margin-bottom: 0.35in;
   }
 
-  .cover h1 {
+  .cover-rings {
+    margin-bottom: 0.3in;
+    opacity: 0.92;
+  }
+
+  .cover-title-block {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0.7in;
+  }
+
+  .cover-title-block h1 {
     font-family: 'Playfair Display', Georgia, serif;
-    font-size: 42pt;
-    line-height: 1.1;
-    color: white;
-    margin-bottom: 0.15in;
+    font-size: 48pt;
+    line-height: 1.05;
+    color: #ffffff;
+    letter-spacing: -0.01em;
+    margin: 0 0 0.08in;
+    text-shadow: 0 2px 40px rgba(212,175,55,0.15);
   }
 
-  .cover .subtitle {
-    font-size: 14pt;
-    font-weight: 300;
-    color: #c0c0d8;
-    margin-bottom: 0.5in;
-    letter-spacing: 0.05em;
+  .cover-title-block h1 em {
+    font-style: italic;
+    color: #e8d9a0;
   }
 
-  .cover .divider {
-    width: 60px;
-    height: 3px;
-    background: #d4af37;
-    margin: 0.3in auto;
+  .cover-rule {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: 3.4in;
+    margin: 0.22in 0;
   }
 
-  .cover .description {
+  .cover-rule-line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #d4af37, transparent);
+  }
+
+  .cover-rule-diamond {
+    color: #d4af37;
     font-size: 11pt;
-    color: #c0c0d8;
-    max-width: 4.5in;
-    line-height: 1.7;
+    line-height: 1;
+  }
+
+  .cover-subtitle {
+    font-size: 13pt;
+    font-weight: 300;
+    color: #b8b8d0;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-top: 0;
+  }
+
+  .cover-bottom {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0.55in;
+    gap: 0.12in;
+  }
+
+  .cover-scripture {
+    font-size: 9.5pt;
+    font-style: italic;
+    color: rgba(255,255,255,0.45);
+    letter-spacing: 0.04em;
+    max-width: 3.8in;
+    line-height: 1.6;
+  }
+
+  .cover-footer-line {
+    width: 2.5in;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(212,175,55,0.4), transparent);
+    margin: 0.08in 0;
+  }
+
+  .cover-org {
+    font-size: 8pt;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: rgba(212,175,55,0.6);
+    font-weight: 700;
   }
 
   /* ---- TOC ---- */
@@ -790,11 +891,63 @@
      COVER
      ============================================================ -->
 <div class="cover page-break">
-  <div class="series-tag">A Six-Week Cohort Experience</div>
-  <h1>Winning in<br>Your Marriage</h1>
-  <div class="subtitle">Couple's Playbook</div>
-  <div class="divider"></div>
-  <p class="description">A practical, Christ-centered guide to strengthening your marriage through six weeks of teaching, honest conversation, and intentional action.</p>
+
+  <!-- Background depth glow -->
+  <div class="cover-glow"></div>
+
+  <!-- Decorative double border frame -->
+  <div class="cover-border"></div>
+  <div class="cover-border-inner"></div>
+
+  <!-- Top section -->
+  <div class="cover-top">
+    <div class="cover-tag">A Six-Week Cohort Experience</div>
+
+    <!-- Interlocking rings SVG -->
+    <div class="cover-rings">
+      <svg viewBox="0 0 160 72" width="160" height="72" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="ring1g" cx="40%" cy="40%" r="60%">
+            <stop offset="0%" stop-color="#f0d060"/>
+            <stop offset="100%" stop-color="#a8800a"/>
+          </radialGradient>
+          <radialGradient id="ring2g" cx="60%" cy="40%" r="60%">
+            <stop offset="0%" stop-color="#f0d060"/>
+            <stop offset="100%" stop-color="#a8800a"/>
+          </radialGradient>
+          <clipPath id="leftHalf"><rect x="0" y="0" width="80" height="72"/></clipPath>
+          <clipPath id="rightHalf"><rect x="80" y="0" width="80" height="72"/></clipPath>
+        </defs>
+        <!-- Left ring behind right ring on right side -->
+        <circle cx="65"  cy="36" r="30" fill="none" stroke="url(#ring1g)" stroke-width="3.5" clip-path="url(#leftHalf)" opacity="0.95"/>
+        <!-- Right ring -->
+        <circle cx="95"  cy="36" r="30" fill="none" stroke="url(#ring2g)" stroke-width="3.5"                            opacity="0.95"/>
+        <!-- Left ring on top on right side (overlap illusion) -->
+        <circle cx="65"  cy="36" r="30" fill="none" stroke="url(#ring1g)" stroke-width="3.5" clip-path="url(#rightHalf)" opacity="0.95"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- Main title block -->
+  <div class="cover-title-block">
+    <h1>Winning in<br><em>Your Marriage</em></h1>
+
+    <div class="cover-rule">
+      <div class="cover-rule-line"></div>
+      <div class="cover-rule-diamond">◆</div>
+      <div class="cover-rule-line"></div>
+    </div>
+
+    <div class="cover-subtitle">Couple&rsquo;s Playbook</div>
+  </div>
+
+  <!-- Bottom section -->
+  <div class="cover-bottom">
+    <div class="cover-scripture">&ldquo;Two are better than one, because they have a good return for their labor.&rdquo;<br>— Ecclesiastes 4:9</div>
+    <div class="cover-footer-line"></div>
+    <div class="cover-org">The Life Church</div>
+  </div>
+
 </div>
 
 
